@@ -17,14 +17,18 @@ h2 {
 }
 
 #logo {
-  height: 60px;
-  margin-top: 10px;
+  width: 300px !important;
+  height: 300px !important;
+  display: block;
+  object-fit: contain;
+  margin: 20px auto;
+  background: none !important;
 }
 
 #chat-box {
   background-color: #ffffff;
-  width: 90%;
-  max-width: 600px;
+  width: 95%;
+  max-width: 1000px;
   height: 60vh;
   overflow-y: auto;
   border-radius: 16px;
@@ -83,8 +87,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  max-width: 600px;
+  width: 95%;
+  max-width: 1000px;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -160,3 +164,33 @@ body.dark-mode .bot-msg {
   background-color: #06d6a0;
   color: white;
 }
+
+.header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #006d77;
+  margin-bottom: 5px;
+}
+
+.header h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #007b83;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#logo {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.toggle-wrapper {
+  margin-top: 10px;
+}
+

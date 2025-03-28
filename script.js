@@ -11,7 +11,7 @@ function sendMessage() {
   scrollToBottom();
 
   // Send request to your backend (update the URL if needed)
-  fetch("https://your-replit-url.repl.co/get_answer", {
+  fetch("https://cebc5f12-ae91-4da9-9f19-bca7e20bdb6d-00-22ep397s4apra.picard.replit.dev/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: userInput })

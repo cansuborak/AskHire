@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AskHire - AI Interview Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <h2>AskHire - AI Interview Assistant</h2>
+  <img id="logo" src="https://i.ibb.co/NddQ1yS/logo.png" alt="AI Logo" />
+
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <div id="chat-box"></div>
+  <div id="typing-indicator" class="typing" style="display: none;">
+    AI Assistant is typing<span class="dots">...</span>
+  </div>
+
+  <div id="chat-controls">
+    <input type="text" id="user-input" placeholder="Type your question..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    function scrollToBottom() {
+      const chatBox = document.getElementById("chat-box");
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+</body>
+</html>

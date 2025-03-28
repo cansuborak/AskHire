@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AskHire - AI Interview Assistant</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-</head>
 <body>
-  <h2>AskHire - AI Interview Assistant</h2>
-  <img id="logo" src="https://ibb.co/NddQ1yS3" alt="AI Logo" />
-
-  <button onclick="toggleDarkMode()">Dark Mode</button>
+  <div class="header">
+    <h1>AskHire</h1>
+    <h3>AI Interview Assistant</h3>
+    <img id="logo" src="https://i.ibb.co/XrHdKFHQ/tamuc-Picsart-Background-Remover.png" alt="AI Logo" />
+    <div class="toggle-wrapper">
+      <button onclick="toggleDarkMode()">Dark Mode</button>
+    </div>
+  </div> <!-- ✅ CLOSE HEADER HERE -->
 
   <div id="chat-box"></div>
+
   <div id="typing-indicator" class="typing" style="display: none;">
     AI Assistant is typing<span class="dots">...</span>
   </div>
@@ -35,4 +31,3 @@
     }
   </script>
 </body>
-</html>

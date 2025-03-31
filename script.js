@@ -5,12 +5,11 @@ function sendMessage() {
   const chatBox = document.getElementById("chat-box");
   const typingIndicator = document.getElementById("typing-indicator");
 
-  // Show user's message
   chatBox.innerHTML += `<div class='user-msg'>You: ${userInput}</div>`;
   typingIndicator.style.display = "block";
   scrollToBottom();
 
-  
+  // ✅ Your working Replit backend URL
   fetch("https://20fb0956-1a6f-4b18-93f2-7ecfab4ded5a-00-tpielkxyl6os.picard.replit.dev/get_answer", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

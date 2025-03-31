@@ -10,7 +10,7 @@ function sendMessage() {
   scrollToBottom();
 
   // ✅ POINT TO YOUR REPLIT BACKEND
-  fetch("https://replit.com/@cansugborak/ai-interview-chatbot/get_answer", {
+  fetch("https://20fb0956-1a6f-4b18-93f2-7ecfab4ded5a-00-tpielkxyl6os.picard.replit.dev/get_answer", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: userInput }),

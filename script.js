@@ -5,7 +5,7 @@ function sendMessage() {
   const chatBox = document.getElementById("chat-box");
   const typingIndicator = document.getElementById("typing-indicator");
 
-  chatBox.innerHTML += `<div class='user-msg'>You: ${userInput}</div>`;
+  chatBox.innerHTML += `<div class='bot-msg'>Bot: The model is waking up... one moment.</div>`;
   typingIndicator.style.display = "block";
   scrollToBottom();
 
@@ -18,12 +18,12 @@ function sendMessage() {
     .then(response => response.json())
     .then(data => {
       typingIndicator.style.display = "none";
-      chatBox.innerHTML += `<div class='bot-msg'>Bot: ${data.answer}</div>`;
+      chatBox.innerHTML += `<div class='bot-msg'>Bot: The model is waking up... one moment.</div>`;
       scrollToBottom();
     })
     .catch(error => {
       typingIndicator.style.display = "none";
-      chatBox.innerHTML += `<div class='bot-msg'>Bot: Sorry, something went wrong.</div>`;
+      chatBox.innerHTML += `<div class='bot-msg'>Bot: The model is waking up... one moment.</div>`;
       console.error("Fetch error:", error);
       scrollToBottom();
     });

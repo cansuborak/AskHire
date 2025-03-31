@@ -1,24 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AskHire - AI Interview Assistant</title>
+
+  <!-- ✅ Link to your CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
 <body>
   <div class="header">
     <h1>AskHire</h1>
     <h3>AI Interview Assistant</h3>
-    <img id="logo" src="https://i.ibb.co/XrHdKFHQ/tamuc-Picsart-Background-Remover.png" alt="AI Logo" />
+
+    <!-- ✅ Logo (Transparent background) -->
+    <img
+      id="logo"
+      src="https://i.ibb.co/XrHdKFHQ/tamuc-Picsart-Background-Remover.png"
+      alt="AI Logo"
+    />
+
+    <!-- ✅ Dark Mode Toggle Button -->
     <div class="toggle-wrapper">
       <button onclick="toggleDarkMode()">Dark Mode</button>
     </div>
-  </div> <!-- ✅ CLOSE HEADER HERE -->
+  </div> <!-- ✅ CLOSE HEADER -->
 
+  <!-- ✅ Chat Box -->
   <div id="chat-box"></div>
 
+  <!-- ✅ Typing Indicator -->
   <div id="typing-indicator" class="typing" style="display: none;">
     AI Assistant is typing<span class="dots">...</span>
   </div>
 
+  <!-- ✅ Chat Controls -->
   <div id="chat-controls">
     <input type="text" id="user-input" placeholder="Type your question..." />
     <button onclick="sendMessage()">Send</button>
   </div>
 
+  <!-- ✅ Script Files -->
   <script src="script.js"></script>
   <script>
     function toggleDarkMode() {
@@ -31,3 +56,4 @@
     }
   </script>
 </body>
+</html>

@@ -10,8 +10,8 @@ function sendMessage() {
   typingIndicator.style.display = "block";
   scrollToBottom();
 
-  // ✅ Corrected fetch URL to include /get_answer
-  fetch("https://cebc5f12-ae91-4da9-9f19-bca7e20bdb6d-00-22ep397s4apra.picard.replit.dev/get_answer", {
+  
+  fetch("https://20fb0956-1a6f-4b18-93f2-7ecfab4ded5a-00-tpielkxyl6os.picard.replit.dev/get_answer", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: userInput })
